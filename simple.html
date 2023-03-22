@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0, maximum-scale=1.0-ui"/>  
+  <meta name="theme-color" content="#317EFB">
+  <title>Blood Pressure App</title>
+  <link rel="manifest" href="./manifest.json">
+  <link rel="apple-touch-icon" href="/icons/icon-128.png">
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <title>Blood Pressure App</title>
+    
+    
+       
+   
+</head>
+<body>
+    <div id='container'>
+        <h1>Healty Blood Pressure(BP) Calulator</h1>
+    <p>You can calculate your Systolic blood pressure rate by using 100 + age*.5. For example, if you're 45 years old, using 100 + age*.5 to get a blood pressure rate of 122.5 Hg. This is the average maximum number of times your heart should beat per minute during exercise.</p>
+    
+    <p id='in' style="width:50%;margin:auto">Enter Your age <input type='number' id='number' name='number' style="text-align: center"></p>
+    
+    <p>Your Systolic blood pressure is <span id='span'>xx</span> millimeters of mecury (mmHg)</p>
+    </div>
+    
+   <script>
+    var age;
+    var bloodPressure;
+    window.onload=start();
+        function start(){
+        document.querySelector('#number').addEventListener('input',calc);
+        }
+    function calc(){
+        age=document.querySelector('#number').value;
+        bloodPressure= 100 + age*.5;
+        document.querySelector('span').textContent=bloodPressure;
+        document.querySelector('span').style.color="red";
+        document.querySelector('span').style.fontSize="xx-large";
+    }
+</script>
+    <script src="myscript.js"></script>
+    
+
+</body>
+</html>

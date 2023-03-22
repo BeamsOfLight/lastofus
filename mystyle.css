@@ -1,0 +1,25 @@
+#container{
+	width:100%;
+	margin:auto;
+	font-size: large;
+	font-family: sans-serif;
+	border: 2px solid black;
+	padding:5px;
+}
+h1{
+	background-color:lightblue;
+	color:darkblue;
+	margin-top:0;
+	text-align: center;
+}
+input{
+  
+	text-align: center;
+  
+}
+#id{
+	text-align: center;
+	 width:50%;
+}
+
+
